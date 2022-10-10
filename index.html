@@ -3,16 +3,13 @@
     <title>GaukeT | Qwixx</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,350,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
     <meta name="description" content="GaukeT | Qwixx">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="text/html; charset=utf-8" />
   </head>
   <body>
-    <!-- <div class="scorecard">
-      <span class="quest"></span>
-      <button type="button" class="start-btn"><span>Start</span></button>
-    </div> -->
-    <h2>Qwixx scorecard</h2>
+    <h2>Qwixx scorecard <span class="material-symbols-outlined">info</span></h2> 
     <div class="scorecard">
       <div class="row">
         <button class="color-red">2</button>
@@ -70,21 +67,21 @@
         <button class="color-blue">2</button>
         <button class="color-blue"><span class="material-symbols-outlined">lock</span></button>
       </div>
-      <div class="row">
+      <div class="score row">
         <div>
-          <input class="small color-red"> +
-          <input class="small color-yellow"> +
-          <input class="small color-green"> +
-          <input class="small color-blue"> +
-          <input class="small color-grey"> =
-          <input class="small long">
+          <input text class="small color-red" placeholder="0"> +
+          <input text class="small color-yellow" placeholder="0"> +
+          <input text class="small color-green" placeholder="0"> +
+          <input text class="small color-blue" placeholder="0"> +
+          <input text class="small color-grey" placeholder="0"> =
+          <input text class="small long" placeholder="0">
         </div>
         <div>
           <div>
-            <button class="small fail">X</button>
-            <button class="small fail">X</button>
-            <button class="small fail">X</button>
-            <button class="small fail">X</button>
+            <input type="checkbox" class="small f1">
+            <input type="checkbox" class="small f2">
+            <input type="checkbox" class="small f3">
+            <input type="checkbox" class="small f4">
           </div>
           <div class="hint">Elke mislukte worp: -5 pt</div>
         </div>

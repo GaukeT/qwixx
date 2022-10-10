@@ -6,6 +6,10 @@ h2 {
   margin: 0.5rem;
 }
 
+h2 > span:hover {
+  background-color: red;
+}
+
 .scorecard {
   margin: 1rem;
   display: flex;
@@ -58,8 +62,7 @@ button:hover {
 
 .color-grey {
   background-color: rgba(128, 128, 128, 0.2);
-  color: rgba(128, 128, 128, 0.2);
-  border: 2px solid grey;
+  border: 2px solid gray;
 }
 
 .selected {
@@ -72,7 +75,7 @@ button:hover {
   color: red !important;
 }
 
-.fail {
+.f1, .f2, .f3, .f4 {
   background-color: rgba(128, 128, 128, 0.2);
   color: rgba(128, 128, 128, 0);
   border: 2px solid grey;
@@ -80,6 +83,27 @@ button:hover {
 
 input {
   border-radius: 10%;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: initial;
+  appearance: initial;
+  background-color: rgba(128, 128, 128, 0.2);
+  position: relative;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "X";
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .small {
@@ -93,6 +117,6 @@ input {
 }
 
 .hint {
-  margin-top: 2px;
+  margin-left: 4px;
   font-size: x-small;
 }
