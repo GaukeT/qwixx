@@ -2,8 +2,6 @@ import Calculator from "./Calculator.js"
 import Failure from "./Failure.js"
 import ScoreCard from "./ScoreCard.js"
 
-let event = new Event('input');
-
 new Calculator(document.querySelector(".score"));
 new Failure(document.querySelector(".score"));
 let sc = new ScoreCard(document.querySelector(".scorecard"));
