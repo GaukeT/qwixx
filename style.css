@@ -85,15 +85,14 @@ input {
   border-radius: 10%;
   text-align: center;
 }
-
-input[type="checkbox"] {
+ .failure > input[type="checkbox"] {
   -webkit-appearance: initial;
   appearance: initial;
   background-color: rgba(128, 128, 128, 0.2);
   position: relative;
 }
 
-input[type="checkbox"]:checked:after {
+.failure > input[type="checkbox"]:checked:after {
   content: "X";
   color: red;
   font-weight: bold;

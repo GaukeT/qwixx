@@ -5,7 +5,7 @@ export default class Failure {
             f2: root.querySelector('.f2'),
             f3: root.querySelector('.f3'),
             f4: root.querySelector('.f4'),
-            fail: root.querySelector('.color-grey'),
+            fail: root.querySelector('.s5'),
         }
 
         this.el.f1.addEventListener('click', () => {
