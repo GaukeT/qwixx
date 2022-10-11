@@ -119,3 +119,13 @@ input {
   margin-left: 4px;
   font-size: x-small;
 }
+
+.scroller {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}

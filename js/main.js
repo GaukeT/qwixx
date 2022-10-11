@@ -12,14 +12,15 @@ document.addEventListener('click', function handleClick(event) {
     if (event.path[0].localName === 'button') {
         let classList = event.path[0].classList;
         addOrRemove(classList);
+        sc.calculate(event, 1);
     }
 
-    if (event.path[0].localName === 'span') {
+    if (event.path[0].localName === 'span' 
+         && event.path[1].localName === 'button') {
         let classList = event.path[1].classList;
         addOrRemove(classList);
+        sc.calculate(event, 2);
     }
-
-    sc.calculate(event);
 })
 
 function addOrRemove(classList) {

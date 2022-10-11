@@ -70,16 +70,16 @@ export default class ScoreCard {
         }
     }
 
-    calculate(event) {
+    calculate(event, pathDepth) {
         let clickCount = 0;
-        let color = event.path[1].classList[0];
+        let color = event.path[pathDepth].classList[0];
 
         for (var elem in this.el) {
             if (elem.startsWith(color)) {
                 clickCount += this.checked(this.el[elem]);
             };
         }
-        
+
         this.count(color, clickCount);
         this.dispatch();
     }
