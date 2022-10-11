@@ -2,6 +2,7 @@ html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   margin: 0;
+  cursor: default;
 }
 
 h2 {
@@ -106,6 +107,10 @@ input {
   appearance: initial;
   background-color: rgba(128, 128, 128, 0.2);
   position: relative;
+}
+
+.failure > input[type="checkbox"]:hover {
+  cursor: pointer;
 }
 
 .failure > input[type="checkbox"]:checked:after {
